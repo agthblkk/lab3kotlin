@@ -15,18 +15,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val avgPowerInput = findViewById<EditText>(R.id.avg_power)
+        val avgPowerInput = findViewById<EditText>(R.id.avgPower)
         val sigma1Input = findViewById<EditText>(R.id.sigma1)
         val sigma2Input = findViewById<EditText>(R.id.sigma2)
-        val electricityPriceInput = findViewById<EditText>(R.id.electricity_price)
-        val calculateButton = findViewById<Button>(R.id.calculate_button)
+        val elPriceInput = findViewById<EditText>(R.id.elPrice)
+        val calculateButton = findViewById<Button>(R.id.calculateButton)
         val resultText = findViewById<TextView>(R.id.result_text)
 
         calculateButton.setOnClickListener {
             val avgPower = avgPowerInput.text.toString().toDoubleOrNull() ?: 0.0
             val sigma1 = sigma1Input.text.toString().toDoubleOrNull() ?: 0.0
             val sigma2 = sigma2Input.text.toString().toDoubleOrNull() ?: 0.0
-            val electricityPrice = electricityPriceInput.text.toString().toDoubleOrNull() ?: 0.0
+            val electricityPrice = elPriceInput.text.toString().toDoubleOrNull() ?: 0.0
 
 
             val results = calculate(avgPower, sigma1, sigma2, electricityPrice)

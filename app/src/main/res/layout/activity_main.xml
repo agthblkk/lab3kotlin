@@ -6,7 +6,7 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/avg_power"
+        android:id="@+id/avgPower"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Середня потужність (МВт)"
@@ -27,14 +27,14 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/electricity_price"
+        android:id="@+id/elPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ціна електроенергії в грн за кВт за годину"
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/calculate_button"
+        android:id="@+id/calculateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Розрахувати кінцевий прибуток" />
